@@ -1,6 +1,22 @@
+{% extends '_layout.html' %}
 {% block content %}
+<main>
 <h1>Register</h1>
 <h4>Enter Student Information below</h4>
 <!--Form to request user's name-->
+<form action="/addStudentOrganisation" method="post">
+    <label for="name">Enter name:</label>
+    <input type="text" id="name" name="name">
+    <label for="organisation">Enter organisation:</label>
+    <select id="organisation" name="organisation"> 
+        <option value="Charlotte Hack">Charlotte Hack</option>
+        <option value="Code 9">Code 9</option>
+        <option value="Women who codes">Women who codes</option>
+        <option value="Runtime Terror">Runtime Terror</option>
+        <option value="ForntPage Freebrid">ForntPage Freebird</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+</main>
 
 {% endblock %}

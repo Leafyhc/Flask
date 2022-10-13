@@ -1,9 +1,18 @@
+{% extends '_layout.html' %}
 {% block content %}
+<main>
 <h1>Student Details</h1>
-<table>
+<table class="table">
+    <tr>
+        <th colspan="2">Student</th>
+        <th colspan="2">organisation</th>
+    </tr>
     {%for key,value in studentOrganisationDetails.items()%}
-
+    <tr>
+        <td colspan="2">{{key}}</td>
+        <td colspan="2">{{value}} </td>
+    </tr>
     {%endfor%}
 </table>
-
+</main>
 {% endblock %}
